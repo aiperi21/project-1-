@@ -1,0 +1,220 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+/* Навигация */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Контент */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #333;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.main-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.main-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Умения */
+.services {
+  margin-top: 50px;
+  padding-top: 1px;
+}
+
+.services .section-title {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services_list__item {
+  max-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.item__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item__description {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Хобби */
+.hobby {
+  margin-top: 50px;
+}
+
+.hobby .section-title {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+/* Фото */
+.photo {
+  margin-top: 50px;
+}
+
+.photo .section-title {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-gallery img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Анимация */
+.animation {
+  margin-top: 50px;
+}
+
+.animation .section-title {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee img {
+  animation: marqueeAnimation 10s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Футер */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
