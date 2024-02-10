@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный фон */
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar {
+  padding-right: 40px; /* Добавляем отступ справа для разделения от основного контента */
+}
+
+.main-content {
+  padding-left: 40px; /* Добавляем отступ слева для разделения от сайдбара */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #1d1515;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 16px; /* Размер шрифта параграфов */
+  color: #1d1515; /* Цвет текста параграфов */
+  line-height: 1.5; /* Межстрочный интервал */
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* фото профиля */
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* бир неме болсун */
+.content {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  display: flex; /* Размещаем дочерние элементы внутри .content в ряд */
+  max-width: 800px;
+  margin: 0 auto;
+
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #333;
+  padding: 20px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.main-content {
+  flex: 2;
+  padding: 5px;
+  position: relative;
+}
+
+.background-image {
+  position: absolute; /* Позиционируем фотографию абсолютно внутри родительского элемента */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3; /* Помещаем фоновое изображение на задний план */
+}
+
+/* умения  */
+.services {
+  margin-top: 50px;
+  padding-top: 1px;
+  flex: 2;
+  margin-left: 20px;
+}
+
+.section-title {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный черный фон */
+  color: #fff;
+  text-align: center;
+}
+
+.services .section-title {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services_list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 90px;
+}
+
+.services_list__item {
+  max-width: 300px;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.item__title {
+  font-size: 28pxs;
+  font-weight: 600;
+}
+
+.portfolio {
+  margin-top: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+}
+
+.portfolio-list__item-second {
+  margin-top: 50px;
+}
+
+.portfolio-list__item-third {
+  margin-top: 100px;
+}
+
+.portfolio-list div {
+  width: 35%;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-gallery img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* анимация */
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee img {
+  animation: marqueeAnimation 10s linear infinite;
+}
